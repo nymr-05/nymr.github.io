@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    margin: 20px;
+    padding-left: 25px;
+    font-weight: bold;
+    color: brown;
+}
+h3,h4{
+    font-weight: bold;
+}
+body a, body a:visited{
+    text-decoration: underline;
+}
+.jumbotron{
+    background-image: url(images/coffee-beans.jpg);
+    margin: auto;
+    padding: 0;
+    height: 150px;
+    width: 100%;
+}
+.jumbotron h1{
+    color: white;
+    margin: 0;
+    padding-top: 6%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+nav{
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    background-color: rgb(168, 95, 77);
+}
+nav ul{
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display: inline-block;
+    margin: auto;
+    width: 16.4%;
+    background-color: rgb(141, 72, 54);
+    height: 30px;
+    align-items: center;
+
+}
+nav li a{
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    align-items: center;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 5px;
+}
+nav li a:hover{
+    background-color: rgb(56, 24, 12);
+    text-decoration: none;
+    color: white;
+}
+
+aside{
+    float: right;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid;
+    margin: 20px;
+    font-style: italic;
+    font-size: 14px;
+}
+aside img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blockquote-footer{
+    float: right;
+    padding-right: 50px;
+}
+#paragraph{
+    padding: 20px;
+    margin: 30px 20px 20px 20px;
+}
+#paragraph img{
+    float: right;
+    margin: 20px;
+}
+footer{
+    margin-top: 220px;
+    padding-bottom: 10px;
+    background-color: rgba(72, 70, 77, 0.993);
+    height: 120px;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+footer p{
+    padding-top: 5%;
+    font-size: 12px;
+    font-style: italic;
+}
+footer a{
+    color: white;
+}
+#nav-back{
+    float: left;
+    padding: 20px;
+}
+#nav-for{
+    float: right;
+    padding: 20px;
+}
+@media screen and (max-width: 1060px) {
+    nav{
+        height: 65px;
+    }
+    nav ul li{
+        width: 32%;
+        margin: 1px;
+        margin-left: 3px;
+    }
+    video{
+        height: 280px;
+        width: 500px;
+    }
+}
+@media screen and (max-width: 470px) {
+    nav{
+        height: 100px;
+    }
+    nav ul{
+        padding-left: 8%;
+    }
+    nav ul li{
+        width: 45%;
+        margin: 1px;
+    }
+    video{
+        height: 168px;
+        width: 300px;
+    }
+}

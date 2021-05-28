@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Coffee Drinks</title>
+        <link rel="shortcut icon" type="image" href="images/tiny-coffee-cup.gif">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="jumbotron" id="jump">
+            <h1>All About Coffee</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="grinding.html">Grinding</a></li>
+                <li><a href="brewing.html">Brewing</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="roasting.html">Roasting</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        <h2>Coffee Survey</h2>
+        <section id="paragraph"> 
+            <form action="form-submit.php" method="GET">
+            <fieldset>
+            <legend>Personal Information</legend>
+                Your Name: <br>
+                <input type="text" name="name" required size="40" placeholder="Your full name">
+                <br>
+                Email: <br>
+                <input type="email" name="email" required size="40" placeholder="example@exapmle.com">
+            </fieldset>
+            <br><br><br>
+            <fieldset>
+            <legend>Your Coffee Preferences</legend>
+            Tell us your coffee preparation methods. <br>
+            <textarea name="message" id="message" cols="40" rows="5"></textarea>
+            <br><br>
+            Do you grind your own beans?<br>
+            <input type="radio" name="radio" value="yes"> Yes    
+            <input type="radio" name="radio" value="no"> No
+            <br><br>
+            How do you drink your coffee?<br>
+            <input type="checkbox" name="checkbox" value="sugar">with Sugar     
+            <input type="checkbox" name="checkbox" value="cream">with Cream
+            <br><br>
+            What is your favorite coffee drink?
+            <select name="favorite" id="drink">
+                <option value="none">Please select an option</option>
+                <option value="drip_coffee">Drip Coffee</option>
+                <option value="frenc_press">Frenc Press</option>
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="flavored">Flavored</option>
+            </select><br><br>
+            <button type="submit">
+                Send
+            </button><br><br>
+            </fieldset>
+        </form>
+        </section>
+        <footer>
+            <a href="roasting.html" id="nav-back"> < Previous Page</a>
+            <a href="index.html" id="nav-for">Home </a>
+            <p>Copyright- allaboutcoffee<br><br>
+                Check out our <a href="survey.html">survey</a> </p>
+        </footer>
+    </body>
+</html>
